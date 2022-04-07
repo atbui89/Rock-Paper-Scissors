@@ -8,7 +8,7 @@ function computerPlay() {
     console.log('You chose ' + playerChoice + '.');
 
 
-  if (playerChoice == 'Rock') {
+  if (playerChoice.toLowerCase() == 'rock') {
       if (computerChoice == 'Rock') {
           console.log('Draw.');
       } else if (computerChoice == 'Paper') {
@@ -16,7 +16,7 @@ function computerPlay() {
       } else {
           console.log('You win! Rock beats Scissors!');
       }
-    } else if (playerChoice == 'Paper') {
+    } else if (playerChoice.toLowerCase() == 'paper') {
         if (computerChoice == 'Paper') {
             console.log('Draw.')
         } else if (computerChoice == 'Scissors') {
@@ -24,7 +24,7 @@ function computerPlay() {
         } else {
             console.log('You win! Paper beats Rock!')
         }
-    } else if (playerChoice == 'Scissors') {
+    } else if (playerChoice.toLowerCase() == 'scissors') {
         if (computerChoice == 'Scissors') {
             console.log('Draw.')
         } else if (computerChoice == 'Rock') {
