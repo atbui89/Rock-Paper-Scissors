@@ -64,24 +64,6 @@ function playRound(computerChoice, playerChoice) {
         checkWinner();
     }
 
-
-
-function game() {
-    for (let i=1; i < 1000; i++) {
-        console.log('Game #' + i + '.');
-        playRound();
-        console.log('User Score: ' + userScore)
-        console.log('Computer Score: ' + computerScore)
-    }
-    if (userScore == computerScore) {
-        console.log('Draw! Try again!')
-    } else if (userScore > computerScore) {
-        console.log('You won the game!')
-    } else {
-        console.log('You lost the game!')
-    }
-}
-
 function gameOld() {
     for (let i=1; i < 6; i++) {
         console.log('Game #' + i + '.');
